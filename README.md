@@ -1,8 +1,7 @@
 
-```markdown
 # SimpleElement.js Documentation
 
-This script provides classes for creating 2D HTML overlays tied to 3D objects in a Three.js scene, dynamically repositioning and resizing them based on the camera view.
+This script provides classes for creating 2D HTML overlays tied to 3D objects in a Three.js scene, dynamically repositioning and resizing them based on the camera view. In reality you only need SimpleElement.js so if you want to directly download it you can.
 
 ## Classes
 
