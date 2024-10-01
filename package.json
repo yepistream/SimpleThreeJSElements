@@ -1,5 +1,5 @@
 {
-  "name": "SimpleThreeJSElements",
+  "name": "simpleyhreejselements",
   "version": "1.0.0",
   "description": "A Simpler Way to put 2D HTML Elements Into Threejs.",
   "main": "index.js",
@@ -11,9 +11,15 @@
   "dependencies": {
     "three": "^0.168.0"
   },
-  "keywords": ["threejs", "html", "overlay", "web", "library"],
+  "keywords": [
+    "threejs",
+    "html",
+    "overlay",
+    "web",
+    "library"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yepistream/SimpleThreeJSElements.git"
+    "url": "git+https://github.com/yepistream/SimpleThreeJSElements.git"
   }
 }
