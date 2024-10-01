@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleElement.js Documentation</title>
+    <link rel="stylesheet" href="scripts/">
+    <!-- Yes, the documentation is made completly by ChatGPT. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        pre {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            background: #d5dbdb;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>SimpleElement.js Documentation</h1>
+    <p>This script provides classes for creating 2D HTML overlays tied to 3D objects in a Three.js scene, dynamically repositioning and resizing them based on camera view.</p>
+
+    <h2>Classes</h2>
+
+    <h3>SimpleIFrame</h3>
+    <p>This class is responsible for displaying a simple HTML overlay (iframe-like) that tracks a 3D object in screen space.</p>
+    
+    <h4>Methods</h4>
+    <pre><code>SimpleIFrame.startAll(camera)</code></pre>
+    <p>Starts the animation loop for all active <code>SimpleIFrame</code> instances. The camera's view-projection matrix is recalculated each frame.</p>
+
+    <pre><code>SimpleIFrame.stopAll()</code></pre>
+    <p>Stops the animation loop.</p>
+
+    <pre><code>constructor(innerHTML, target, offset)</code></pre>
+    <p>Creates a new <code>SimpleIFrame</code> instance.</p>
+    <ul>
+        <li><code>innerHTML</code>: The HTML content to display in the div.</li>
+        <li><code>target</code>: The 3D object the overlay should track.</li>
+        <li><code>offset</code>: Optional position offset in pixels (default: <code>new THREE.Vector2(0, 0)</code>).</li>
+    </ul>
+
+    <h3>SmartFloatingPanel</h3>
+    <p>A more advanced version of <code>SimpleIFrame</code>, with additional features such as distance-based scaling and dynamic font resizing.</p>
+
+    <h4>Constructor</h4>
+    <pre><code>constructor(innerHTML, target, offset, scaleDistance, resizeOnlyText)</code></pre>
+    <p>Creates a new <code>SmartFloatingPanel</code> instance.</p>
+    <ul>
+        <li><code>innerHTML</code>: The HTML content for the panel.</li>
+        <li><code>target</code>: The 3D object to track.</li>
+        <li><code>offset</code>: Position offset in pixels (default: <code>new THREE.Vector2(0, 0)</code>).</li>
+        <li><code>scaleDistance</code>: Maximum distance for scaling the panel (default: <code>3000</code>).</li>
+        <li><code>resizeOnlyText</code>: Whether to resize only text elements (default: <code>true</code>).</li>
+    </ul>
+
+    <h4>Methods</h4>
+    <ul>
+        <li><code>recenterElement(camera, frustum)</code>: Repositions the HTML overlay to match the target's position in 2D screen space.</li>
+        <li><code>resizeFontsBasedOnParent()</code>: Dynamically resizes fonts based on the panel's size.</li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2024 SimpleElement.js Documentation</p>
+    </footer>
+</body>
+</html>
