@@ -42,6 +42,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+#Random Testing Scripts
+scripts/SimpleDivScene.js
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 

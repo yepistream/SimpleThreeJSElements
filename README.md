@@ -5,32 +5,32 @@ This script provides classes for creating 2D HTML overlays tied to 3D objects in
 
 ## Classes
 
-### SimpleIFrame
+### HTMLOverlay
 
 This class is responsible for displaying a simple HTML overlay (iframe-like) that tracks a 3D object in screen space.
 
 #### Methods
 
 ```javascript
-SimpleIFrame.startAll(camera)
+HTMLOverlay.startAll(camera)
 ```
 Starts the animation loop for all active `SimpleIFrame` instances. The camera's view-projection matrix is recalculated each frame.
 
 ```javascript
-SimpleIFrame.stopAll()
+HTMLOverlay.stopAll()
 ```
 Stops the animation loop.
 
 ```javascript
 constructor(innerHTML, target, offset)
 ```
-Creates a new `SimpleIFrame` instance.
+Creates a new `HTMLOverlay` instance.
 
 - `innerHTML`: The HTML content to display in the div.
 - `target`: The 3D object the overlay should track.
 - `offset`: Optional position offset in pixels (default: `new THREE.Vector2(0, 0)`).
 
-### SmartFloatingPanel
+### HTMLOverlay3D
 
 A more advanced version of `SimpleIFrame`, with additional features such as distance-based scaling and dynamic font resizing.
 
@@ -39,7 +39,7 @@ A more advanced version of `SimpleIFrame`, with additional features such as dist
 ```javascript
 constructor(innerHTML, target, offset, scaleDistance, resizeOnlyText)
 ```
-Creates a new `SmartFloatingPanel` instance.
+Creates a new `HTMLOverlay3D` instance.
 
 - `innerHTML`: The HTML content for the panel.
 - `target`: The 3D object to track.
