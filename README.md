@@ -52,6 +52,14 @@ Creates a new `HTMLOverlay3D` instance.
 - `recenterElement(camera, frustum)`: Repositions the HTML overlay to match the target's position in 2D screen space.
 - `resizeFontsBasedOnParent()`: Dynamically resizes fonts based on the panel's size.
 
+
+## Customizing the Overlay
+
+If you want to change the look of the overlay, you can do so by modifying the CSS styles in the overlay class. This allows you to customize aspects like colors, fonts, and sizes to better fit your application’s design.
+
 ---
 
 &copy; 2024 SimpleElement.js Documentation By Marko Kazimirovic (README by ChatGPT 4.o)
+
+
+

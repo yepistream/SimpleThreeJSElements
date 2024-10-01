@@ -1,5 +1,5 @@
 {
-  "name": "simpleyhreejselements",
+  "name": "simplethreejselements",
   "version": "1.0.0",
   "description": "A Simpler Way to put 2D HTML Elements Into Threejs.",
   "main": "index.js",
