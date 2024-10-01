@@ -14,7 +14,7 @@ This class is responsible for displaying a simple HTML overlay (iframe-like) tha
 ```javascript
 HTMLOverlay.startAll(camera)
 ```
-Starts the animation loop for all active `SimpleIFrame` instances. The camera's view-projection matrix is recalculated each frame.
+Starts the animation loop for all active `HTMLOverlay` instances. The camera's view-projection matrix is recalculated each frame.
 
 ```javascript
 HTMLOverlay.stopAll()
@@ -32,7 +32,7 @@ Creates a new `HTMLOverlay` instance.
 
 ### HTMLOverlay3D
 
-A more advanced version of `SimpleIFrame`, with additional features such as distance-based scaling and dynamic font resizing.
+A more advanced version of `HTMLOverlay`, with additional features such as distance-based scaling and dynamic font resizing.
 
 #### Constructor
 
