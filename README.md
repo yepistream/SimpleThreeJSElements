@@ -1,5 +1,5 @@
 
-# SimpleElement.js Documentation
+# IMPORTANT : THIS SHIT IS DEPRECATED, IF YOU WANT A NEWER AND MORE UP-KEEP VERSION GO TO : https://www.npmjs.com/package/sorcherer | github.com/yepistream/sorcherer
 
 This script provides classes for creating 2D HTML overlays tied to 3D objects in a Three.js scene, dynamically repositioning and resizing them based on the camera view. In reality you only need SimpleElement.js so if you want to directly download it you can.
 
